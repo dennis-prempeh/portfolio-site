@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,65 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Obeng-Prempeh Dennis | Portfolio</title>
   <style>
+    :root {
+      --primary: #0a192f;
+      --accent: #64ffda;
+      --text: #ccd6f6;
+      --background: #112240;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
     }
-    .header {
-      background-color: #2b2b2b;
-      color: white;
-      padding: 2rem 1rem;
-    }
-    .profile-img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-top: 1rem;
-      border: 4px solid white;
-    }
-    .content {
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
       padding: 2rem;
-      max-width: 700px;
-      margin: auto;
     }
+
+    .header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid var(--accent);
+      object-fit: cover;
+    }
+
+    .header h1 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
     .tagline {
-      font-size: 1.2rem;
       font-style: italic;
-      color: #555;
-      margin: 0.5rem 0 1.5rem;
+      color: #8892b0;
+      margin-top: 0.5rem;
     }
+
+    .bio {
+      margin-top: 2rem;
+      background-color: #0f2a4d;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
     .footer {
-      background-color: #222;
-      color: white;
+      text-align: center;
+      margin-top: 3rem;
       padding: 1rem;
       font-size: 0.9rem;
+      color: #8892b0;
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Obeng-Prempeh Dennis</h1>
-    <p class="tagline">Aspiring Software Engineer passionate about building impactful digital solutions</p>
-    <img src="IMG_2377.JPG" alt="Dennis' profile photo" class="profile-img">
-  </div>
+  <div class="container">
+    <div class="header">
+      <img src="IMG_2377.JPG" alt="Dennis profile photo">
+      <h1>Obeng-Prempeh Dennis</h1>
+      <p class="tagline">Aspiring Software Engineer passionate about building impactful digital solutions</p>
+    </div>
 
-  <div class="content">
-    <h2>About Me</h2>
-    <p>
-      I’m an emerging software engineer with a strong interest in developing solutions that solve real-world problems.
-      With a foundation in programming and a growing portfolio of hands-on projects, I’m eager to contribute to innovative teams
-      and continue learning cutting-edge technologies. My goal is to use software to make a lasting, positive impact in communities
-      locally and globally.
-    </p>
-  </div>
+    <div class="bio">
+      <p>I'm Obeng-Prempeh Dennis, an emerging software engineer passionate about solving real-world problems through technology. Currently enrolled in the ALX Tech program, I'm building a strong foundation in full-stack development, with hands-on experience in both front-end and back-end projects. My work is rooted in curiosity, creativity, and a commitment to using software to drive meaningful change.</p>
+      <p>What makes me unique is my blend of problem-solving skills, adaptability, and a desire to make a positive impact. Whether it’s leading a coding sprint to deliver a working web app or diving into new frameworks, I’m always eager to learn and push the boundaries of what I can create. I’m especially interested in applying my skills to social good—such as developing software that improves healthcare access, supports education, or promotes environmental sustainability.</p>
+      <p>My ultimate goal is to become a well-rounded software engineer who not only writes great code but contributes to scalable solutions that uplift communities locally and globally. Through this journey, I aim to live out my passion by working with mission-driven teams, exploring innovative tech, and continuously growing as a developer and changemaker.</p>
+    </div>
 
-  <div class="footer">
-    &copy; 2025 Obeng-Prempeh Dennis. All rights reserved.
+    <div class="footer">
+      &copy; 2025 Obeng-Prempeh Dennis. All rights reserved.
+    </div>
   </div>
 </body>
 </html>
